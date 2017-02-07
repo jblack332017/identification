@@ -18,7 +18,7 @@ public class Select {
 	
 	public void selectSeq(){
 		try{
-			File directory = new File(String.valueOf("src/res/select"));
+			File directory = new File(String.valueOf("select"));
 		    if (! directory.exists()){
 		        directory.mkdir();
 		        // If you require it to make the entire directory path including parents,
@@ -33,7 +33,7 @@ public class Select {
 			
 			PrintWriter writer;
 			try {
-				writer = new PrintWriter("src/res/select/"+organism.getName(), "UTF-8");
+				writer = new PrintWriter("select/"+organism.getName(), "UTF-8");
 			
 		    StringBuilder stringBuilder = new StringBuilder();
 			
